@@ -112,7 +112,7 @@ const App: Component<{}, {
 	return (
 		<div id="app">
 			<div class="top">
-				<img src="/vite.svg" />
+				<img src="/logo.png" />
 				<h2>Dreamland 2 Playground</h2>
 			</div>
 			<div class="editor">
