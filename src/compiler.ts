@@ -1,12 +1,8 @@
 import { rollup } from "@rollup/browser";
-import wasm from "../node_modules/@rollup/browser/dist/bindings_wasm_bg.wasm?url";
 
 import dlCore from "dreamland/core?raw";
 import dlJsxRuntime from "dreamland/jsx-runtime?raw";
 import dlJsxDevRuntime from "dreamland/jsx-dev-runtime?raw";
-
-// @ts-ignore
-globalThis.ROLLUP_WASM = wasm;
 
 const modules = new Map(Object.entries({
 	"dreamland/core": dlCore,
