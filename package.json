@@ -10,11 +10,11 @@
 	},
 	"devDependencies": {
 		"typescript": "^5.8.3",
-		"vite": "^6.3.1"
+		"vite": "^6.3.5"
 	},
 	"dependencies": {
-		"@rollup/browser": "^4.40.0",
-		"dreamland": "../dreamland",
+		"@rollup/browser": "^4.42.0",
+		"dreamland": "link:../dreamland",
 		"monaco-editor": "^0.52.2"
 	}
 }

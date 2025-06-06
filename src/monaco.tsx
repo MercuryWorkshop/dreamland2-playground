@@ -1,4 +1,4 @@
-import { Component, DLBoundPointer, scope } from "dreamland/core";
+import { Component, DLBoundPointer } from "dreamland/core";
 
 import * as monaco from "monaco-editor";
 import editorWorker from 'monaco-editor/esm/vs/editor/editor.worker?worker'
@@ -44,7 +44,7 @@ tsDefaults.addExtraLib(dlJsxRuntime, monaco.Uri.file("dreamland/jsx-runtime.d.ts
 export const Monaco: Component<{ value: DLBoundPointer<string>, transpiled: DLBoundPointer<string>, }, {}, {
 	initPromise: Promise<void>,
 }> = function(cx) {
-	cx.css = scope`
+	cx.css = `
 		:scope, .monaco-editor {
 			width: 100%;
 			height: 100%;

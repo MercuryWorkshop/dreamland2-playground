@@ -1,4 +1,4 @@
-import { Component, DLPointer, render, scope } from "dreamland/core";
+import { Component, DLPointer } from "dreamland/core";
 
 import "./style.css";
 import { Monaco } from "./monaco";
@@ -7,7 +7,7 @@ import { compile } from "./compiler";
 import defaultCode from "./defaultCode?raw";
 
 const Preview: Component<{ transpiled: DLPointer<string> }> = function(cx) {
-	cx.css = scope`
+	cx.css = `
 		:scope {
 			width: 100%;
 			height: 100%;
@@ -69,7 +69,7 @@ const App: Component<{}, {
 	code: string,
 	transpiled: string,
 }> = function(cx) {
-	cx.css = scope`
+	cx.css = `
 		:scope {
 			background: #000;
 			color: #fff;
@@ -125,4 +125,4 @@ const App: Component<{}, {
 	)
 }
 
-document.querySelector("#app")?.replaceWith(render(<App />));
+document.querySelector("#app")?.replaceWith(<App />);

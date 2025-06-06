@@ -1,4 +1,4 @@
-import { Component, render, scope, DLBoundPointer } from "dreamland/core";
+import { Component, DLBoundPointer } from "dreamland/core";
 
 const Counter: Component<{ count: DLBoundPointer<number> }> = function() {
     return (
@@ -10,7 +10,7 @@ const Counter: Component<{ count: DLBoundPointer<number> }> = function() {
 }
 
 const App: Component<{}, {count: number}> = function (cx) {
-    cx.css = scope`
+    cx.css = `
         :scope {
             background: #111;
             color: #fff;
@@ -32,4 +32,4 @@ const App: Component<{}, {count: number}> = function (cx) {
     )
 }
 
-document.body.appendChild(render(<App />));
+document.body.appendChild(<App />);
