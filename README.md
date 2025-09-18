@@ -1,4 +1,4 @@
->![NOTE]
+>[!NOTE]
 > Moved to [the main dreamland.js repo](https://github.com/mercuryworkshop/dreamlandjs)
 
 # Dreamland Playground
